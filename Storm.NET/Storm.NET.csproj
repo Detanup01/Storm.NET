@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <ProjectGuid>{B5B75829-02FD-46F0-9652-430DC7F5F114}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>StormDotNet</RootNamespace>
+    <AssemblyName>Storm.NET</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <FileAlignment>512</FileAlignment>
+    <TargetFramework>net46</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <EnableDefaultItems>False</EnableDefaultItems>
+  </PropertyGroup>
+  <PropertyGroup />
+  <ItemGroup>
+    <Compile Include="ApplicationDescriptor.cs" />
+    <Compile Include="BaseData.cs" />
+    <Compile Include="Common\Stream.cs" />
+    <Compile Include="ConnectivityFacade.cs" />
+    <Compile Include="CRC32.cs" />
+    <Compile Include="Data.cs" />
+    <Compile Include="DataBuffer.cs" />
+    <Compile Include="DataContainer.cs" />
+    <Compile Include="DataType.cs" />
+    <Compile Include="DynamicTypeRegistry.cs" />
+    <Compile Include="Echo\Object\NetObject.cs" />
+    <Compile Include="Echo\Object\NetObjectDescriptor.cs" />
+    <Compile Include="Echo\Object\NetObjectHandler.cs" />
+    <Compile Include="Echo\Object\NetObjectMemento.cs" />
+    <Compile Include="Echo\Object\NetObjectMessage.cs" />
+    <Compile Include="Echo\Object\NetObjectMigrationMode.cs" />
+    <Compile Include="Echo\Object\NetObjectReplicationMode.cs" />
+    <Compile Include="Echo\Object\NetObjectRole.cs" />
+    <Compile Include="Echo\PeerChannel\PeerChannel.cs" />
+    <Compile Include="Echo\PeerChannel\PeerMessage.cs" />
+    <Compile Include="Echo\PeerDescriptor.cs" />
+    <Compile Include="Echo\SEngineStartUpParams.cs" />
+    <Compile Include="Echo\SessionDescriptor.cs" />
+    <Compile Include="Echo\SessionInfo.cs" />
+    <Compile Include="Echo\SessionType.cs" />
+    <Compile Include="Echo\SessionTypeExtensions.cs" />
+    <Compile Include="Echo\TransportMode.cs" />
+    <Compile Include="Echo\VoiceChat.cs" />
+    <Compile Include="Endian.cs" />
+    <Compile Include="EResult.cs" />
+    <Compile Include="Extensions\MarshalEx.cs" />
+    <Compile Include="GUID.cs" />
+    <Compile Include="INetProperty.cs" />
+    <Compile Include="IPEndPoint.cs" />
+    <Compile Include="IStatsObserver.cs" />
+    <Compile Include="LDNController.cs" />
+    <Compile Include="Log.cs" />
+    <Compile Include="LogDevice.cs" />
+    <Compile Include="LogDeviceCallback.cs" />
+    <Compile Include="LogDeviceContainer.cs" />
+    <Compile Include="LogDeviceFile.cs" />
+    <Compile Include="MonoPInvokeCallbackAttribute.cs" />
+    <Compile Include="MonoUnmanagedFunctionPointerAttribute.cs" />
+    <Compile Include="NATType.cs" />
+    <Compile Include="ObjectController.cs" />
+    <Compile Include="ObjectGUID.cs" />
+    <Compile Include="OperationRegister.cs" />
+    <Compile Include="PeerChannelController.cs" />
+    <Compile Include="PerfProfileScope.cs" />
+    <Compile Include="PlatformType.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Punch\ClientParams.cs" />
+    <Compile Include="Quaternion.cs" />
+    <Compile Include="ResultEventArgs.cs" />
+    <Compile Include="ResultRelayer.cs" />
+    <Compile Include="SessionController.cs" />
+    <Compile Include="SessionHandler.cs" />
+    <Compile Include="StatsController.cs" />
+    <Compile Include="Stats\FrameStat.cs" />
+    <Compile Include="Stats\GlobalQOSStat.cs" />
+    <Compile Include="Stats\MementoStat.cs" />
+    <Compile Include="Stats\ObjectMessageStat.cs" />
+    <Compile Include="Stats\ObjectMessageStreamStat.cs" />
+    <Compile Include="Stats\ObjectStat.cs" />
+    <Compile Include="Stats\ObjectStreamStat.cs" />
+    <Compile Include="Stats\PacketStat.cs" />
+    <Compile Include="Stats\PacketType.cs" />
+    <Compile Include="Stats\PeerChannelMessageStat.cs" />
+    <Compile Include="Stats\PeerChannelStat.cs" />
+    <Compile Include="Stats\QOSStat.cs" />
+    <Compile Include="Stats\VoiceChatStat.cs" />
+    <Compile Include="StormEngine.cs" />
+    <Compile Include="StormSdk.cs" />
+    <Compile Include="StringId.cs" />
+    <Compile Include="UbiServicesControllerBase.cs" />
+    <Compile Include="UbiServicesControllerClientBase.cs" />
+    <Compile Include="Vector2.cs" />
+    <Compile Include="Vector3.cs" />
+    <Compile Include="Vector4.cs" />
+    <Compile Include="VoiceChatController.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp">
+      <HintPath>..\..\..\..\..\..\..\testing_aio\DepotDownloader-master\DepotDownloader\bin\Debug\net6.0\UNO\7691901573301440883\UNO_BackUpThisFolder_ButDontShipItWithYourGame\Managed\Microsoft.CSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>..\..\..\..\..\..\..\testing_aio\DepotDownloader-master\DepotDownloader\bin\Debug\net6.0\UNO\7691901573301440883\UNO_BackUpThisFolder_ButDontShipItWithYourGame\Managed\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>..\..\..\..\..\..\..\testing_aio\DepotDownloader-master\DepotDownloader\bin\Debug\net6.0\UNO\7691901573301440883\UNO_BackUpThisFolder_ButDontShipItWithYourGame\Managed\System.Core.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+</Project>
